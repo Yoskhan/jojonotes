@@ -9,7 +9,7 @@ export default function Notes() {
 
   useEffect(() => {
     fetch(
-      'https://react-custom-hooks-5f368-default-rtdb.europe-west1.firebasedatabase.app/mynotes.json'
+      'https://jojonotes-2f398-default-rtdb.europe-west1.firebasedatabase.app/mynotes.json'
     )
       .then((res) => res.json())
       .then((data) => {
@@ -26,7 +26,7 @@ export default function Notes() {
 
   const deleteHandler = async (id) => {
     await fetch(
-      'https://react-custom-hooks-5f368-default-rtdb.europe-west1.firebasedatabase.app/mynotes/' +
+      'https://jojonotes-2f398-default-rtdb.europe-west1.firebasedatabase.app/mynotes/' +
         id +
         '/.json',
       {

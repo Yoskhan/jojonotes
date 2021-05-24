@@ -47,7 +47,7 @@ export default function Create() {
 
     if (title && details) {
       fetch(
-        'https://react-custom-hooks-5f368-default-rtdb.europe-west1.firebasedatabase.app/mynotes.json',
+        'https://jojonotes-2f398-default-rtdb.europe-west1.firebasedatabase.app/mynotes.json',
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
